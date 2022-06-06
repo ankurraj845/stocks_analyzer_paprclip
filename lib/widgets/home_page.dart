@@ -15,7 +15,6 @@ import 'package:stocks_analyzer/widgets/side_buttons.dart';
 
 import 'dropdown_classic.dart';
 
-
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -39,14 +38,16 @@ class HomePage extends StatelessWidget {
                       text: TextSpan(
                         children: [
                           WidgetSpan(
-                            child: Icon(  Icons.arrow_back_ios, size: 20,color: Colors.white,),
+                            child: Icon(
+                              Icons.arrow_back_ios,
+                              size: 20,
+                              color: Colors.white,
+                            ),
                           ),
                           TextSpan(
-                            text: "  USD / INR ", style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold)
-
-                          ),
-
-
+                              text: "  USD / INR ",
+                              style: TextStyle(
+                                  fontSize: 24, fontWeight: FontWeight.bold)),
                         ],
                       ),
                     ),
@@ -54,7 +55,6 @@ class HomePage extends StatelessWidget {
 
                   //DROPDOWN MENU OF TECHNICAL INDICATOR
                   MyStatefulWidget2(),
-
                 ],
               ),
             ),
@@ -79,8 +79,6 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-
-
                   Container(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -95,7 +93,7 @@ class HomePage extends StatelessWidget {
                   ),
 
                   //SIDE BUTTONS
-                 SideButtons(),
+                  SideButtons(),
                 ],
               ),
             ],
@@ -104,18 +102,17 @@ class HomePage extends StatelessWidget {
           //AVERAGES SECTION
           Averages(),
           MyStatefulWidget(),
-         DataAverages(),
+          DataAverages(),
 
-      //OSCILLATORS SECTION
+          //OSCILLATORS SECTION
           Oscillators(),
           DataOscillator(),
 
-      //PIVOT SECTION
+          //PIVOT SECTION
           Pivot(),
-    MyStatefulWidget3(),
+          MyStatefulWidget3(),
           DataPivot(),
-
-      ],
+        ],
       ),
     );
   }
