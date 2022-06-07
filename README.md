@@ -1,4 +1,6 @@
 # stocks_analyzer
+An app which helps you to track
+and analyse your favourite stocks .
 
 A new Flutter project.
 
